@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "id": "11e2",
+      "title": "Code",
+      "description": "Practice coding at least 3 hours per day"
+    },
+    {
+      "id": "804c",
+      "title": "Grocery",
+      "description": "Buy groceries for christmas and new year"
+    },
+    {
+      "id": "e361",
+      "title": "CV",
+      "description": "Update cv for submission"
+    }
+  ]
+}
