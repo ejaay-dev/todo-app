@@ -12,7 +12,7 @@ const DeleteTodoModal = ({
   const handleDeleteTaskBtn = async (id) => {
     try {
       const response = await fetch(
-        "http://todo-app.vercel.app/api/json-server/tasks" + id,
+        "https://todo-app-theta-umber-91.vercel.app/api/json-server/tasks" + id,
         {
           method: "DELETE",
         }
