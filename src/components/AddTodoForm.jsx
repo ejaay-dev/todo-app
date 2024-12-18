@@ -18,8 +18,9 @@ const AddTodoForm = ({ refetchTrigger }) => {
   const handleAddTaskBtn = (e) => {
     e.preventDefault()
     const todo = { title, description }
-    const url =
-      "https://todo-app-theta-umber-91.vercel.app/api/json-server/tasks"
+    // const url =
+    //   "https://todo-app-theta-umber-91.vercel.app/api/json-server/tasks"
+    const url = "http://localhost:4000/tasks"
 
     // FUNCTION TO SEND POST REQUEST USING ASYNC/AWAIT
     // TRADITIONAL FUNCTION DECLARATION (NAMED FUNCTION)

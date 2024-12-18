@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "builds": [{ "src": "*.js", "use": "@vercel/node" }],
+  "builds": [
+    {
+      "src": "/api/json-server.js",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["data/db.json"] }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/"
+      "dest": "json-server.js"
     }
   ]
 }
