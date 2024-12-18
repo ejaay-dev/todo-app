@@ -16,7 +16,7 @@ const TodoWrapper = () => {
     title: "",
     description: "",
   })
-  const url = "http://localhost:4000/tasks"
+  const url = "http://todo-app.vercel.app/api/json-server/tasks"
 
   // THIS CODE BLOCK IS THE FUNCTION FOR FETCHING THE TASKS FROM THE API
   useEffect(() => {
