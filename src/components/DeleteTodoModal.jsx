@@ -11,9 +11,12 @@ const DeleteTodoModal = ({
 
   const handleDeleteTaskBtn = async (id) => {
     try {
-      const response = await fetch("http://localhost:4000/tasks/" + id, {
-        method: "DELETE",
-      })
+      const response = await fetch(
+        "https://todo-app-theta-umber-91.vercel.app/api/json-server/tasks" + id,
+        {
+          method: "DELETE",
+        }
+      )
 
       if (!response.ok) {
         throw new Error(`Failed to delete task with ID: ${id}`)
