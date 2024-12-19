@@ -11,7 +11,7 @@ const EditTodoForm = ({
   description,
 }) => {
   const [task, setTask] = useState({})
-  const url = "https://json-server-deployment.vercel.app/tasks/"
+  const url = "https://json-server-deployment-iota.vercel.app/tasks"
   // const url = "http://localhost:4000/tasks/"
 
   useEffect(() => {

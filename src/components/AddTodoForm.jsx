@@ -18,7 +18,7 @@ const AddTodoForm = ({ refetchTrigger }) => {
   const handleAddTaskBtn = (e) => {
     e.preventDefault()
     const todo = { title, description }
-    const url = "https://json-server-deployment.vercel.app/tasks/"
+    const url = "https://json-server-deployment-iota.vercel.app/tasks"
     // const url = "http://localhost:4000/tasks"
 
     // FUNCTION TO SEND POST REQUEST USING ASYNC/AWAIT
