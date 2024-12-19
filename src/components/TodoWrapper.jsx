@@ -16,7 +16,7 @@ const TodoWrapper = () => {
     title: "",
     description: "",
   })
-  const url = "https://json-server-deployment.vercel.app/tasks"
+  const url = "https://json-server-deployment.vercel.app/tasks/"
   // const url = "http://localhost:4000/tasks"
 
   // THIS CODE BLOCK IS THE FUNCTION FOR FETCHING THE TASKS FROM THE API
