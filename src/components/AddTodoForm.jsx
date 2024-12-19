@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
 const AddTodoForm = ({ refetchTrigger }) => {
+  const [id, setId] = useState("")
   const [title, setTitle] = useState("")
   const [description, setDescription] = useState("")
   const [isSaving, setIsSaving] = useState(false)
@@ -17,9 +18,9 @@ const AddTodoForm = ({ refetchTrigger }) => {
   // THIS CODE BLOCK IS THE FUNCTION FOR THE ADD BUTTON IN THE ADD TODO FORM
   const handleAddTaskBtn = (e) => {
     e.preventDefault()
-    const todo = { title, description }
+    const todo = { id, title, description }
     const url = "https://json-server-deployment-iota.vercel.app/tasks"
-    // const url = "http://localhost:4000/tasks"
+    // const url = "http://localhost:8080/tasks"
 
     // FUNCTION TO SEND POST REQUEST USING ASYNC/AWAIT
     // TRADITIONAL FUNCTION DECLARATION (NAMED FUNCTION)

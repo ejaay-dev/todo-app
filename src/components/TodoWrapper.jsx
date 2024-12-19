@@ -17,7 +17,7 @@ const TodoWrapper = () => {
     description: "",
   })
   const url = "https://json-server-deployment-iota.vercel.app/tasks"
-  // const url = "http://localhost:4000/tasks"
+  // const url = "http://localhost:8080/tasks"
 
   // THIS CODE BLOCK IS THE FUNCTION FOR FETCHING THE TASKS FROM THE API
   useEffect(() => {

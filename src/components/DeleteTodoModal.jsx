@@ -11,8 +11,9 @@ const DeleteTodoModal = ({
 
   const handleDeleteTaskBtn = async (id) => {
     try {
+      // const response = await fetch(`http://localhost:8080/tasks/${id}`, {
       const response = await fetch(
-        "https://json-server-deployment-iota.vercel.app/tasks" + id,
+        `https://json-server-deployment-iota.vercel.app/tasks/${id}`,
         {
           method: "DELETE",
         }
@@ -80,7 +81,10 @@ const DeleteTodoModal = ({
                 </button>
                 <button
                   className="text-xs text-center text-[#fff] font-normal rounded-md shadow px-3 py-2 bg-[#000] hover:bg-opacity-85"
-                  onClick={(e) => handleDeleteTaskBtn(currentTask.id)}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    handleDeleteTaskBtn(currentTask.id)
+                  }}
                 >
                   Delete
                 </button>
