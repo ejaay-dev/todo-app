@@ -11,7 +11,7 @@ const EditTodoForm = ({
   description,
 }) => {
   const [task, setTask] = useState({})
-  const url = "https://json-server-deployment-iota.vercel.app/tasks"
+  const url = "https://json-server-deployment-iota.vercel.app/tasks/"
   // const url = "http://localhost:8080/tasks/"
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const EditTodoForm = ({
     e.preventDefault()
 
     try {
-      await fetch(url + id, {
+      await fetch(`${url}${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ id, title, description }),

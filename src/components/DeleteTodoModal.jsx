@@ -9,15 +9,13 @@ const DeleteTodoModal = ({
 }) => {
   if (!openDeleteModal) return null
 
+  const url = "https://json-server-deployment-iota.vercel.app/tasks/"
   const handleDeleteTaskBtn = async (id) => {
     try {
       // const response = await fetch(`http://localhost:8080/tasks/${id}`, {
-      const response = await fetch(
-        `https://json-server-deployment-iota.vercel.app/tasks/${id}`,
-        {
-          method: "DELETE",
-        }
-      )
+      const response = await fetch(`${url}${id}`, {
+        method: "DELETE",
+      })
 
       if (!response.ok) {
         throw new Error(`Failed to delete task with ID: ${id}`)
